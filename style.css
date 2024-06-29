@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --bg-color: #23242a;
+  --dd-primary-color: #323742;
+  --dd-hover-color: #22252b8b;
+  --dd-selected-color: #23242a;
+  --dd-selected-border-color: #244990;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+
+  font-family: "Montserrat", Calibri, sans-serif;
+}
+
+body {
+  background-color: #23242a;
+}
+
+#main-wrapper {
+  border-radius: 0.5em;
+  padding: 2rem;
+
+  display: flex;
+  gap: 3em;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+
+.dropdown-selector {
+  border: none;
+  outline: none;
+  appearance: none;
+
+  transition: 0.1s ease-in-out;
+
+  color: white;
+  font-weight: bold;
+  display: flex;
+  gap: 3em;
+  padding: 1.5em;
+  justify-content: space-between;
+  background-color: var(--dd-primary-color);
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+
+.dropdown-selector:focus {
+  box-shadow: 0 0 5px 5px var(--dd-selected-border-color);
+}
+
+.dropdown-items {
+  background-color: var(--dd-primary-color);
+
+  position: absolute;
+  top: 120%;
+  width: 100%;
+
+  border-radius: 0.3em;
+  padding: 0.5em;
+  display: none;
+}
+
+.dropdown-item {
+  transition: 0.1s ease-in-out;
+  padding: 1em;
+  border-radius: inherit;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: var(--dd-hover-color);
+}
+
+.dropdown-selector img {
+  width: 15px;
+  height: auto;
+}
