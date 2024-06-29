@@ -1,0 +1,23 @@
+{
+  "name": "lidorcohen-dropdown-menu",
+  "version": "1.0.0",
+  "description": "A cool dropdown menu built with html, css and js",
+  "main": "dropdown-script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lidor-cohen/dropdown-menu.git"
+  },
+  "keywords": [
+    "dropdown",
+    "dropdown-menu"
+  ],
+  "author": "Lidor Cohen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lidor-cohen/dropdown-menu/issues"
+  },
+  "homepage": "https://github.com/lidor-cohen/dropdown-menu#readme"
+}
